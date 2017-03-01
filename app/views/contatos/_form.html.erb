@@ -1,0 +1,26 @@
+<%= form_for(@contato) do |f| %>
+  <% if @contato.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contato.errors.count, "error") %> :</h2>
+      <ul>
+      <% @contato.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="col-md-6">
+  <div class="form-group">
+    <%= f.label :nome %>
+    <%= f.text_field :nome, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.text_field :email, :class => 'form-control' %>
+  </div>
+  <div class="section_btn">
+    <%= f.submit 'Salvar' , :class => 'btn btn-default' %>
+    <%= link_to("Voltar",{:controller=>'contatos',:action=>'index'} , :class=>'btn btn-default') %>
+  </div>
+  </div>
+<% end %>
