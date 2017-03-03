@@ -9,13 +9,14 @@ The basic requirements for iCasei Back-End Developer test to work properly are a
 Ruby :: 2.3.3p222
 Rails	:: 5.0.1
 MySQL	:: 5.0
+Mysql2  ::  0.3.18 < 0.5
 Puma	:: 3.0
 Bootstrap-sass  ::  3.3.6
-Jquery-rails  ::  4.2.2
-Mysql2  ::  0.3.18 < 0.5
 Sass-rails  ::  5.0
+font-awesome-sass	::	4.7.0
 Uglifier  ::  1.3.0
 Coffee-rails  ::  4.2
+Jquery-rails  ::  4.2.2
 Jquery-datatables-rails ::  3.4.0
 Turbolinks  ::  5
 Jbuilder  ::  2.5
@@ -43,7 +44,9 @@ How to improve your development environment for running the application:
     create database IcaseiTest;
     grant all privileges on IcaseiTest.* to root@'%' identified by 'password';
 
-If your MySQL Server has different host, username or password, it is necessary  set the file configuration reference: IcaseiTest/\config/\database.yml
+If your MySQL Server has different host, username or password, it is necessary set the file configuration reference in application's root directory:
+
+ IcaseiTest/config/database.yml
 
  username: root
  password: password
