@@ -36,36 +36,36 @@ grant all privileges on IcaseiTest_test.* to root@'%' identified by 'password';
 Create database IcaseiTest;
 grant all privileges on IcaseiTest.* to root@'%' identified by 'password';
 If your MySQL Server has different host, username or password, it is necessary  set the file configuration reference: IcaseiTest\config\database.yml
-
-username: root
- password: password
- host: localhost
- 
-The final file will be:
+<code>
+ <p>username: root</p>
+ <p>password: password</p>
+ <p>host: localhost</p>
+ </code>
+<p>The final file will be:<p>
 <br>
 <code>
-default: &default
- adapter: mysql2
- encoding: utf8
- pool: 5
- username: root
- password: password
- host: localhost
- development:
- <<: *default
- database: IcaseiTest
-  test:
- <<: *default
- database: IcaseiTest_test
-  production:
- <<: *default
- database: IcaseiTest_production
- username: IcaseiTest'
- password: <%= ENV['ICASEITEST_DATABASE_PASSWORD'] %>
+default: &default<br>
+ adapter: mysql2<br>
+ encoding: utf8<br>
+ pool: 5<br>
+ username: root<br>
+ password: password<br>
+ host: localhost<br>
+ development:<br>
+ <<: *default<br>
+ database: IcaseiTest<br>
+  test:<br>
+ <<: *default<br>
+ database: IcaseiTest_test<br>
+  production:<br>
+ <<: *default<br>
+ database: IcaseiTest_production<br>
+ username: IcaseiTest'<br>
+ password: <%= ENV['ICASEITEST_DATABASE_PASSWORD'] %><br>
 </code>
 <br>
 <ul>
-	<li>Deployment instructions</li>
+	<li><b>Deployment instructions<b></li>
 </ul>
 This application use GEM to manage bundle install to run. Follow the deployment instructions bellow for Installing:
 Run the command in the application's root directory
