@@ -90,8 +90,10 @@ Run the command in the application's root directory to create tables in database
 
 Run the command to start the application
 
-<tt>$ rails server --binding localhost </tt>
+<tt>$ rails server -b 0.0.0.0</tt>
 
 Run the command to perform the test suite
 
-<tt>$ rake -test </tt>
+ $ rake db:schema:dump	
+ $ rake db:test:prepare
+ $ rake -test
