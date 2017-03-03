@@ -43,7 +43,7 @@ How to improve your development environment for running the application:
     create database IcaseiTest;
     grant all privileges on IcaseiTest.* to root@'%' identified by 'password';
 
-If your MySQL Server has different host, username or password, it is necessary  set the file configuration reference: IcaseiTest\config\database.yml
+If your MySQL Server has different host, username or password, it is necessary  set the file configuration reference: IcaseiTest\\config\\database.yml
 
  username: root
  password: password
