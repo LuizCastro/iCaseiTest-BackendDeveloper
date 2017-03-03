@@ -96,4 +96,4 @@ Run the command to perform the test suite
 
  $ rake db:schema:dump	
  $ rake db:test:prepare
- $ rake -test
+ $ rake test
