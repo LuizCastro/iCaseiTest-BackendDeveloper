@@ -42,7 +42,7 @@ username: root
  host: localhost
  
 The final file will be:
-
+<code>
 default: &default
  adapter: mysql2
  encoding: utf8
@@ -61,7 +61,7 @@ default: &default
  database: IcaseiTest_production
  username: IcaseiTest'
  password: <%= ENV['ICASEITEST_DATABASE_PASSWORD'] %>
-
+</code>
 Deployment instructions 
 This application use GEM to manage bundle install to run. Follow the deployment instructions bellow for Installing:
 Run the command in the application's root directory
