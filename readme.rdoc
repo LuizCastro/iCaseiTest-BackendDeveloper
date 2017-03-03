@@ -38,13 +38,11 @@ How to improve your development environment for running the application:
 <b>Database Creation:</b>
 
 *	Database for Test:
-
  create database IcaseiTest_test;
  grant all privileges on IcaseiTest_test.* to root@'%' identified by 'password';
 
 
 *	Database for Development:
-
  create database IcaseiTest;</tt>
  grant all privileges on IcaseiTest.* to root@'%' identified by 'password';</tt>
 
