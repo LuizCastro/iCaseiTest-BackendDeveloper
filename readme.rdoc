@@ -86,7 +86,7 @@ Run the command in the application's root directory
 
 Run the command in the application's root directory to create tables in database
 
-<tt>$ rails db:migration</tt>
+<tt>$ rake db:migrate</tt>
 
 Run the command to start the application
 
