@@ -47,7 +47,7 @@
 <script>
 $(document).ready(function() {
     $('#tabContato').DataTable({
-      select: true, keys: true,pageLength: 10,
+      select: true, keys: true,pageLength: 10,"order": [[ 2, "desc" ]],
                 "language": {
                     "sEmptyTable": "Nenhum registro encontrado",
                     "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
