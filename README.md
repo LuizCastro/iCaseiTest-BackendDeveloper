@@ -44,35 +44,36 @@ If your MySQL Server has different host, username or password, it is necessary  
 <p>The final file will be:<p>
 <br>
 <code>
-default: &default<br>
- adapter: mysql2<br>
- encoding: utf8<br>
- pool: 5<br>
- username: root<br>
- password: password<br>
- host: localhost<br>
- development:<br>
- <<: *default<br>
- database: IcaseiTest<br>
-  test:<br>
- <<: *default<br>
- database: IcaseiTest_test<br>
-  production:<br>
- <<: *default<br>
- database: IcaseiTest_production<br>
- username: IcaseiTest'<br>
- password: <%= ENV['ICASEITEST_DATABASE_PASSWORD'] %><br>
+default: &default</br>
+ adapter: mysql2</br>
+ encoding: utf8</br>
+ pool: 5</br>
+ username: root</br>
+ password: password</br>
+ host: localhost</br>
+ development:</br>
+ <<: *default</br>
+ database: IcaseiTest</br>
+  test:</br>
+ <<: *default</br>
+ database: IcaseiTest_test</br>
+  production:</br>
+ <<: *default</br>
+ database: IcaseiTest_production</br>
+ username: IcaseiTest'</br>
+ password: <%= ENV['ICASEITEST_DATABASE_PASSWORD'] %></br>
 </code>
-<br>
+</br>
 <ul>
 	<li><b>Deployment instructions<b></li>
 </ul>
+</br>
 This application use GEM to manage bundle install to run. Follow the deployment instructions bellow for Installing:
 Run the command in the application's root directory
-$ bundle install
+<code>$ bundle install</code>
 Run the command in the application's root directory to create tables in database
-$ rails db:migration
+<code>$ rails db:migration</code>
 Run the command to start the application
-$ rails server --binding localhost 
+<code>$ rails server --binding localhost </code>
 Run the command to perform the test suite
- $ rake -test 
+ <code>$ rake -test </code>
