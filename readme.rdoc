@@ -43,8 +43,8 @@ How to improve your development environment for running the application:
 
 
 *	Database for Development:
- create database IcaseiTest;</tt>
- grant all privileges on IcaseiTest.* to root@'%' identified by 'password';</tt>
+ create database IcaseiTest;
+ grant all privileges on IcaseiTest.* to root@'%' identified by 'password';
 
 
 If your MySQL Server has different host, username or password, it is necessary set the file configuration reference in application's root directory:
